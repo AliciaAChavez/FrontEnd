@@ -6,3 +6,7 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
+h2{
+    text-decoration: underline
+}
