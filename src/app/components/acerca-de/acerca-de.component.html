@@ -1,0 +1,61 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="bi bi-pencil-fill"></i>
+  </button>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <img src="../../../assets/perfilPhoto.jpg" class="img-fluid" id="fotodeperfil">
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <h1 id="nombre">{{persona.nombre}} {{persona.apellido}}</h1>
+        <p>{{persona.img}}</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        <span>
+            <h2>Acerca de mí</h2>
+            <p>{{persona.descripcion}}</p>
+        </span>
+    </div>
+</div> 
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar Perfil</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+          <!--
+
+          <div class="row">
+            <div>
+                <form (ngSubmit)= "onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="tituloP">Título</label>
+                        <input type="text" class="form-control" id="tituloE" name="tituloE" [(ngModel)]="persona.tituloP" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionP">Acerca de Mí</label>
+                        <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="persona.descripcionP" required>
+                    </div>
+                    <button class="btn btn-primary">
+                        Editar educacion
+                    </button>
+                </form>
+
+         -->       
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Grabar los cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
