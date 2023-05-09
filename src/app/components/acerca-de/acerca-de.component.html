@@ -1,5 +1,5 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" *ngIf="isLogged" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
     <i class="bi bi-pencil-fill"></i>
   </button>
 
@@ -30,31 +30,31 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
-          <!--
+        
 
           <div class="row">
             <div>
                 <form (ngSubmit)= "onUpdate()" novalidate #f="ngForm">
                     <div class="form-group">
-                        <label for="tituloP">Título</label>
-                        <input type="text" class="form-control" id="tituloE" name="tituloE" [(ngModel)]="persona.tituloP" required>
+                        <label for="img">Título</label>
+                        <input type="text" class="form-control" id="img" name="img" [(ngModel)]="persona.img" required>
                     </div>
+                    <br>
                     <div class="form-group">
-                        <label for="descripcionP">Acerca de Mí</label>
-                        <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="persona.descripcionP" required>
+                        <label for="descripcion">Acerca de Mí</label>
+                        <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
                     </div>
-                    <button class="btn btn-primary">
-                        Editar educacion
+                    <br>
+                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                        Salvar cambios y salir
                     </button>
                 </form>
 
-         -->       
-          ...
+           
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Grabar los cambios</button>
+          <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           <button type="button" class="btn btn-primary">Grabar los cambios</button> -->
         </div>
       </div>
     </div>
